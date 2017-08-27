@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.example.summerproject.summerproject.AddQuizedActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="20dp"
+        android:id="@+id/questions"
+        android:hint="Enter your  Question"/>
+
+        <CheckBox
+            android:text="true false quiz"
+            android:id="@+id/true_false_btn"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="or"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/mcq_edittext"
+                android:layout_weight="6.5"
+                android:layout_height="wrap_content" />
+        <Button
+            android:text="add MCQ"
+            android:id="@+id/addmcq_btn"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <GridView
+            android:id="@+id/ans_list"
+            android:numColumns="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="submit"
+            android:id="@+id/submit_btn"
+            android:layout_gravity="bottom|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
